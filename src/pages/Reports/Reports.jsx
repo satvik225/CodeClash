@@ -16,7 +16,7 @@ const Reports = () => {
       };
 
       const { data } = await axios.get(
-        `http://localhost:8080/api/v1/admin/all-reports`,
+        `https://codeclash-server-38gt.onrender.com/api/v1/admin/all-reports`,
         config
       );
 

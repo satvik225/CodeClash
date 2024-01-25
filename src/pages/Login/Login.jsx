@@ -39,7 +39,7 @@ const Login = () => {
         };
         setLoading(true);
         const { data } = await axios.post(
-          'http://localhost:8080/api/v1/users/login',
+          'https://codeclash-server-38gt.onrender.com/api/v1/users/login',
           { email: username, password: password },
           config
         );

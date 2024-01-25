@@ -36,7 +36,7 @@ const SignUp = () => {
         };
         setLoading(true);
         const { data } = await axios.post(
-          'http://localhost:8080/api/v1/users/signup',
+          'https://codeclash-server-38gt.onrender.com/api/v1/users/signup',
           {
             name: name,
             email: email,

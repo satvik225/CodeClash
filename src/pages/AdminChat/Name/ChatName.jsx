@@ -19,7 +19,7 @@ const ChatName = () => {
       };
 
       const { data } = await axios.get(
-        'http://localhost:8080/api/v1/admin/all-chats',
+        'https://codeclash-server-38gt.onrender.com/api/v1/admin/all-chats',
         config
       );
       console.log(data);

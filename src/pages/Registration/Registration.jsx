@@ -31,7 +31,7 @@ const Registration = () => {
       console.log(college);
       // console.log("---------------------------------");
       const { data } = await axios.post(
-        "http://localhost:8080/api/v1/users/register",
+        "https://codeclash-server-38gt.onrender.com/api/v1/users/register",
         {
           college: college,
           githubHandle: githubHandle,

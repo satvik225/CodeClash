@@ -31,7 +31,7 @@ const Me = () => {
         },
       };
       const { data } = await axios.get(
-        `http://localhost:8080/api/v1/users/${slug}`,
+        `https://codeclash-server-38gt.onrender.com/api/v1/users/${slug}`,
 
         config
       );
@@ -71,7 +71,7 @@ const Me = () => {
 
       // console.log(viewUser);
       const { data } = await axios.post(
-        `http://localhost:8080/api/v1/users/make-friend`,
+        `https://codeclash-server-38gt.onrender.com/api/v1/users/make-friend`,
         { friendId: viewUser._id },
 
         config

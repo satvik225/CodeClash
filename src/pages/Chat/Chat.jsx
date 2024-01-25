@@ -12,7 +12,7 @@ import { useNavigate } from 'react-router-dom';
 import TextField from '@mui/material/TextField';
 import { Helmet } from 'react-helmet';
 
-const ENDPOINT = 'http://localhost:8080/';
+const ENDPOINT = 'https://codeclash-server-38gt.onrender.com/';
 var socket, selectedChatCompare;
 const Chat = () => {
   const [messages, setMessages] = useState([]);
@@ -58,7 +58,7 @@ const Chat = () => {
         };
         setNewMessage('');
         const { data } = await axios.post(
-          'http://localhost:8080/api/v1/message',
+          'https://codeclash-server-38gt.onrender.com/api/v1/message',
           {
             content: newMessage,
             chatId: selectedChat._id,

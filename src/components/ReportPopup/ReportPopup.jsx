@@ -17,7 +17,7 @@ const ReportPopup = ({ item }) => {
         },
       };
       const { data } = await axios.post(
-        `http://localhost:8080/api/v1/report/report-discussion`,
+        `https://codeclash-server-38gt.onrender.com/api/v1/report/report-discussion`,
         { content: query, chatId: item._id },
         config
       );

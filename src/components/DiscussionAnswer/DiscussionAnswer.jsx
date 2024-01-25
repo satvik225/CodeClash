@@ -24,7 +24,7 @@ const DiscussionAnswer = ({ item }) => {
       };
 
       const { data } = await axios.post(
-        "http://localhost:8080/api/v1/admin/delete-message",
+        "https://codeclash-server-38gt.onrender.com/api/v1/admin/delete-message",
         { messageId: item._id },
         config
       );
@@ -46,7 +46,7 @@ const DiscussionAnswer = ({ item }) => {
       };
 
       const { data } = await axios.post(
-        `http://localhost:8080/api/v1/message/vote/${item._id}`,
+        `https://codeclash-server-38gt.onrender.com/api/v1/message/vote/${item._id}`,
         { vote: "up" },
         config
       );
@@ -69,7 +69,7 @@ const DiscussionAnswer = ({ item }) => {
       };
 
       const { data } = await axios.post(
-        `http://localhost:8080/api/v1/message/vote/${item._id}`,
+        `https://codeclash-server-38gt.onrender.com/api/v1/message/vote/${item._id}`,
         { vote: "down" },
         config
       );

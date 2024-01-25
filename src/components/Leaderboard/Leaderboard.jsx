@@ -12,7 +12,7 @@ const Leaderboard = () => {
       },
     };
     const { data } = await axios.get(
-      `http://localhost:8080/api/v1/ctf/leaderboard`,
+      `https://codeclash-server-38gt.onrender.com/api/v1/ctf/leaderboard`,
       config
     );
     console.log(data);

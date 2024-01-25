@@ -17,7 +17,7 @@ const FriendCard = ({ item }) => {
         },
       };
       const { data } = await axios.post(
-        `http://localhost:8080/api/v1/chat`,
+        `https://codeclash-server-38gt.onrender.com/api/v1/chat`,
         { userId: item._id },
         config
       );

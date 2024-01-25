@@ -55,7 +55,7 @@ const DiscussionChat = () => {
       };
 
       const { data } = await axios.post(
-        `http://localhost:8080/api/v1/chat/vote/${discussionData._id}`,
+        `https://codeclash-server-38gt.onrender.com/api/v1/chat/vote/${discussionData._id}`,
         { vote: 'up' },
         config
       );
@@ -78,7 +78,7 @@ const DiscussionChat = () => {
       };
 
       const { data } = await axios.post(
-        `http://localhost:8080/api/v1/chat/vote/${discussionData._id}`,
+        `https://codeclash-server-38gt.onrender.com/api/v1/chat/vote/${discussionData._id}`,
         { vote: 'down' },
         config
       );
@@ -103,7 +103,7 @@ const DiscussionChat = () => {
         },
       };
       const { data } = await axios.post(
-        `http://localhost:8080/api/v1/chat/slug`,
+        `https://codeclash-server-38gt.onrender.com/api/v1/chat/slug`,
         { slug: slug },
         config
       );
@@ -114,7 +114,7 @@ const DiscussionChat = () => {
       setDown(data.chat[0].downvotes.length);
 
       const message = await axios.get(
-        `http://localhost:8080/api/v1/message/${data.chat[0]._id}`,
+        `https://codeclash-server-38gt.onrender.com/api/v1/message/${data.chat[0]._id}`,
 
         config
       );
@@ -146,7 +146,7 @@ const DiscussionChat = () => {
           autoClose: 2000,
         });
         const { data } = await axios.post(
-          `http://localhost:8080/api/v1/message/`,
+          `https://codeclash-server-38gt.onrender.com/api/v1/message/`,
           { content: answer, code: answercode, chatId: discussionData._id },
           config
         );

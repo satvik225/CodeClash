@@ -42,7 +42,7 @@ const DiscussionCard = ({ item }) => {
       };
 
       const { data } = await axios.post(
-        `http://localhost:8080/api/v1/chat/vote/${item._id}`,
+        `https://codeclash-server-38gt.onrender.com/api/v1/chat/vote/${item._id}`,
         { vote: "up" },
         config
       );
@@ -65,7 +65,7 @@ const DiscussionCard = ({ item }) => {
       };
 
       const { data } = await axios.post(
-        `http://localhost:8080/api/v1/chat/vote/${item._id}`,
+        `https://codeclash-server-38gt.onrender.com/api/v1/chat/vote/${item._id}`,
         { vote: "down" },
         config
       );
@@ -88,7 +88,7 @@ const DiscussionCard = ({ item }) => {
       };
 
       const { data } = await axios.post(
-        "http://localhost:8080/api/v1/admin/delete-discussion",
+        "https://codeclash-server-38gt.onrender.com/api/v1/admin/delete-discussion",
         { chatId: item._id },
         config
       );
@@ -110,7 +110,7 @@ const DiscussionCard = ({ item }) => {
         },
       };
       const { data } = await axios.get(
-        `http://localhost:8080/api/v1/users/${user.data.user.name}`,
+        `https://codeclash-server-38gt.onrender.com/api/v1/users/${user.data.user.name}`,
 
         config
       );
@@ -135,7 +135,7 @@ const DiscussionCard = ({ item }) => {
       };
 
       const { data } = await axios.post(
-        "http://localhost:8080/api/v1/users/add-bookmark",
+        "https://codeclash-server-38gt.onrender.com/api/v1/users/add-bookmark",
         { chatId: item._id },
         config
       );

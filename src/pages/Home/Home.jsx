@@ -31,7 +31,7 @@ const Home = () => {
         },
       };
       const { data } = await axios.get(
-        `http://localhost:8080/api/v1/ctf`,
+        `https://codeclash-server-38gt.onrender.com/api/v1/ctf`,
 
         config
       );
@@ -73,7 +73,7 @@ const Home = () => {
         };
         console.log(isUserLoggedIn.current.token);
         const { data } = await axios.post(
-          `http://localhost:8080/api/v1/ctf/createCtf`,
+          `https://codeclash-server-38gt.onrender.com/api/v1/ctf/createCtf`,
           {
             description: discription,
             heading,

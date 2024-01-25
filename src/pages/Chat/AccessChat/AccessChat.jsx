@@ -25,7 +25,7 @@ const AccessChat = ({ messages, setMessages, socket, selectedChatCompare }) => {
         },
       };
       const { data } = await axios.get(
-        `http://localhost:8080/api/v1/message/${selectedChat._id}`,
+        `https://codeclash-server-38gt.onrender.com/api/v1/message/${selectedChat._id}`,
         config
       );
       socket.emit("join chat", selectedChat._id);

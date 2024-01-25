@@ -32,7 +32,7 @@ const Discussion = () => {
           },
         };
         const { data } = await axios.post(
-          `http://localhost:8080/api/v1/chat/create-discussion`,
+          `https://codeclash-server-38gt.onrender.com/api/v1/chat/create-discussion`,
           {
             chatName: discussionName,
             discription: discription,
@@ -70,7 +70,7 @@ const Discussion = () => {
         },
       };
       const { data } = await axios.get(
-        `http://localhost:8080/api/v1/chat/discussion`,
+        `https://codeclash-server-38gt.onrender.com/api/v1/chat/discussion`,
         config
       );
       setDiscussion(data);
